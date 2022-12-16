@@ -9,14 +9,13 @@
     li{
         list-style: none;
         ._tag{
-            margin: 0px;
             list-style: none;
             height: 25px;
             font-size: 15px;
             font-weight: 700;
             padding: 0px 7px;
             padding-top: 2px;
-            
+
             border-radius: 2px;
             background-color: $Light;
             color: $DesaturatedDarkCyan;
@@ -35,6 +34,7 @@
 
 @media screen and (min-width:992px) {
     .tag_wrapper{
+        margin-top: 0px;
         width: 100%;
         margin-left: auto;
         justify-content: flex-end;
