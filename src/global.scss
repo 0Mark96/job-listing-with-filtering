@@ -5,6 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    /* width */
+  ::-webkit-scrollbar {
+    width: 8px;    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:$DesaturatedDarkCyan;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  $VeryDarkGrayishCyan;
+  }
+}
+
 
 body{
     font-family: 'League Spartan', sans-serif;

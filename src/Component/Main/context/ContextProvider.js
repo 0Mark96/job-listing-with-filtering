@@ -12,11 +12,11 @@ const tagsReducer = (state, action) => {
 switch (action.type) {
     case 'ADD_TAG':
         return {
-          tagsSearch: !state.tagsSearch.includes(action.tag) ? [...state.tagsSearch,action.tag] : state.tagsSearch,
+          tagsSearch: [...state.tagsSearch,action.tag]
         }
     case 'REMOVE_TAG':
        return {
-         tagsSearch: state.tagsSearch.filter(tag => tag !== action.tag),
+         tagsSearch: state.tagsSearch.filter(tag => tag !== action.tag)
        }
     case 'CLEAR_ALL_TAG':
       return {

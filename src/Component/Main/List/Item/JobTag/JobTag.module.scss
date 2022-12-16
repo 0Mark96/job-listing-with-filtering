@@ -15,14 +15,20 @@
             font-size: 15px;
             font-weight: 700;
             padding: 0px 7px;
-
+            padding-top: 2px;
+            
             border-radius: 2px;
             background-color: $Light;
             color: $DesaturatedDarkCyan;
-            &:hover{
+            
+            &:active{
                 background-color: $DesaturatedDarkCyan;
                 color: $Light;
             }
+        }
+        .tag_added{
+            background-color: $DesaturatedDarkCyan;
+            color: $Light;
         }
     }
 }
@@ -32,7 +38,10 @@
         width: 100%;
         margin-left: auto;
         justify-content: flex-end;
-
+        ._tag:hover{
+            background-color: $DesaturatedDarkCyan;
+            color: $Light;
+        }
     }
 }
 
