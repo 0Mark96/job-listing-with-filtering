@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className={header}>
       <picture>
-        <source media="(min-width: 376px)" srcSet={bgDesktop} />
+        <source media="(min-width: 768px)" srcSet={bgDesktop} />
         <img src={bgMobile} alt="background header" className={bg_img}/>
       </picture>
     </header>
