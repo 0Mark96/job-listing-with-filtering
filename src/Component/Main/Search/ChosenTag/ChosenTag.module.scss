@@ -1,0 +1,37 @@
+@import '../../../../common/variable';
+
+.tag_wrapper{
+    margin: 10px;
+    list-style: none;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    
+    border-radius: 2px;
+    background-color: $Light;
+    color: $DesaturatedDarkCyan;
+
+    .tag_name{
+        padding: 0px 7px;
+        margin-top:1px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .remove_tag{
+        height: 100%;
+        background-color: $DesaturatedDarkCyan;
+        display: flex;
+        align-items: center;
+        padding: 0px 7px;
+        &:active{
+          background-color: $VeryDarkGrayishCyan;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .remove_tag:hover{
+        background-color: $VeryDarkGrayishCyan;
+    }
+}

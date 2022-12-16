@@ -1,0 +1,38 @@
+@import '../../../../../common/variable';
+
+.tag_wrapper{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    li{
+        list-style: none;
+        ._tag{
+            margin: 0px;
+            list-style: none;
+            height: 25px;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 0px 7px;
+
+            border-radius: 2px;
+            background-color: $Light;
+            color: $DesaturatedDarkCyan;
+            &:hover{
+                background-color: $DesaturatedDarkCyan;
+                color: $Light;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .tag_wrapper{
+        width: 100%;
+        margin-left: auto;
+        justify-content: flex-end;
+
+    }
+}
+

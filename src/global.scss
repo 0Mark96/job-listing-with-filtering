@@ -1,0 +1,19 @@
+@import './common/variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: $LightBackground;
+    font-size: 15px;
+    button{
+        cursor: pointer;
+        font-family: 'League Spartan', sans-serif;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}

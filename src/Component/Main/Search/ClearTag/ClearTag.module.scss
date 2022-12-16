@@ -1,0 +1,23 @@
+@import '../../../../common/variable';
+
+.clear_btn{
+    font-weight: 700;
+    color:$DarkGrayishCyan;
+    background-color: transparent;
+    margin: 10px;
+    &:active{
+        text-decoration: underline;
+        text-underline-offset:2px;
+        color: $DesaturatedDarkCyan;
+    }
+}
+
+@media screen and (min-width:992px){
+    .clear_btn{
+        &:hover{
+           text-decoration: underline;
+           text-underline-offset:2px;
+           color: $DesaturatedDarkCyan;
+        }
+    }
+}

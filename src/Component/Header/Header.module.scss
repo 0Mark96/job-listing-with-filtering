@@ -1,0 +1,25 @@
+@import '../../common/variable';
+
+.header{
+    display: flex;
+    justify-content: center;
+    max-height: 180px;
+    overflow: hidden;
+    background-color: $DesaturatedDarkCyan;
+        .bg_img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+} 
+
+@media screen and (min-width:376px){
+    .header{
+        min-height:80px;
+        max-height: none;
+        .bg_img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}

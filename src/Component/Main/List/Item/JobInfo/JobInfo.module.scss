@@ -1,0 +1,73 @@
+@import '../../../../../common/variable';
+
+.info_wrapper{
+    border-bottom: 1px solid $DarkGrayishCyan;
+    width: 100%;
+    .primary_info{
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        ._company{
+            color: $DesaturatedDarkCyan;
+            font-weight: 700;
+        }
+        ._new,._featured{
+            padding: 7px 8px 4px 8px;
+            color: white;
+            border-radius: 20px;
+        }
+        ._new{
+            background-color: $DesaturatedDarkCyan;
+            margin-left: 15px;
+        }
+        ._featured{
+            background-color: $VeryDarkGrayishCyan;
+            margin-left: 10px;
+        }
+    }
+
+    ._position{
+        cursor: pointer;
+        color: $VeryDarkGrayishCyan;
+        font-weight: 700;
+        margin: 15px 0px;
+        &:hover{
+            color: $DesaturatedDarkCyan;
+        }
+    }
+   
+    .secondary_info{
+        display: inline-flex;
+        color:$DarkGrayishCyan;
+        margin-bottom: 15px;
+        li{
+            margin-right: 25px;
+            &:first-child{
+              list-style: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px){
+    .info_wrapper{
+        margin-left: 20px;
+        border-bottom: none;
+        .primary_info {
+           ._new,._featured{
+            font-size: 14px;
+            padding: 5px 8px 3px 8px;
+           }
+        }
+        ._position{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .secondary_info{
+            margin-bottom: 0px;
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+}
